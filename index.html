@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator with four basic operations.</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="tic-tac-toe.js"></script>
+</head>
+<body>
+<div id="tic-tac-toe-grid-container" class="calculator content-size">
+    <div class="container vertical">
+        <div class="container horizontal">
+            <input type="radio" id="human-ai" name="mode" value="Human-AI" onchange="ticTacToe.clear()">
+            <label for="human-ai">H - AI</label><br>
+            <input type="radio" id="ai-human" name="mode" value="AI-Human" onchange="ticTacToe.clear()">
+            <label for="ai-human">AI-H</label><br>
+            <input type="radio" id="human-human" name="mode" value="Human-Human" onchange="ticTacToe.clear()">
+            <label for="human-human">H-H</label>
+            <div class="button" onclick="ticTacToe.clear()">Play<br>again</div>
+            <input type="checkbox" id="hint" name="mode" value="show-hint" onchange="ticTacToe.clickHint()">
+            <label for="hint">Hint</label>
+        </div>
+        <div class="container horizontal">
+            <div class="item result">
+                <div id="result" class="button" ></div>
+            </div>
+        </div>
+        <div class="container horizontal">
+            <div class="item">
+                <div id="1_1" class="button" onclick="ticTacToe.choose(event, this)"></div>
+            </div>
+            <div class="item">
+                <div id="1_2" class="button" onclick="ticTacToe.choose(event, this)"></div>
+            </div>
+            <div class="item">
+                <div id="1_3" class="button" onclick="ticTacToe.choose(event, this)"></div>
+            </div>
+        </div>
+        <div class="container horizontal">
+            <div class="item">
+                <div id="2_1" class="button" onclick="ticTacToe.choose(event, this)"></div>
+            </div>
+            <div class="item">
+                <div id="2_2" class="button" onclick="ticTacToe.choose(event, this)"></div>
+            </div>
+            <div class="item">
+                <div id="2_3" class="button" onclick="ticTacToe.choose(event, this)"></div>
+            </div>
+        </div>
+        <div class="container horizontal">
+            <div class="item">
+                <div id="3_1" class="button" onclick="ticTacToe.choose(event, this)"></div>
+            </div>
+            <div class="item">
+                <div id="3_2" class="button" onclick="ticTacToe.choose(event, this)"></div>
+            </div>
+            <div class="item">
+                <div id="3_3" class="button" onclick="ticTacToe.choose(event, this)"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
