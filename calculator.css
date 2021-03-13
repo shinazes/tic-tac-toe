@@ -58,7 +58,7 @@ body {
 
 .container {
     display: flex;
-    background-color: #5a5a5a;
+    background-color: #505050;
     justify-content: center;
     align-content: center;
 }
@@ -89,21 +89,21 @@ body {
     background-color: #f1f1f1;
     margin: calc(var(--button-spacing) / 2);
     padding: var(--button-vertical-padding);
-    border: 2px solid #ec590e;
+    border: 2px solid #af5b22;
 }
 
 .button:hover {
-    background-color: #ffcfcf;
-    border: 2px solid #ffffff;
+    background-color: #cfcfcf;
+    border: 2px solid black;
     height: available;
 }
 
 #calc-result {
-    background-color: white;
+    background-color: #ffffff;
     text-align: right;
     margin: calc(var(--button-spacing) / 2);
     padding: var(--button-vertical-padding);
-    border: 2px solid darkgray;
+    border: 2px solid #a9a9a9;
 }
 
 .result {
@@ -111,6 +111,6 @@ body {
 }
 
 .win {
-background-color: #ff0000;
-    color: #0022ff;
+background-color: #af5b22;
+    color: #00ffff;
 }
